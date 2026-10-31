@@ -1056,7 +1056,7 @@ phase5_audit.py,.py,17649,BFI_v2_FINAL_COMPLETE.zip,EXCLUDED,not needed for the 
 .env.example,.example,1065,authored for the public repository,PUBLISHED,new file,.env.example
 .github/workflows/tests.yml,.yml,811,authored for the public repository,PUBLISHED,new file,.github/workflows/tests.yml
 .gitignore,(none),952,authored for the public repository,PUBLISHED,new file,.gitignore
-LICENSE,(none),1261,authored for the public repository,PUBLISHED,new file,LICENSE
+LICENSE,(none),1068,authored for the public repository,PUBLISHED,new file,LICENSE
 docs/ARCHITECTURE.md,.md,6109,authored for the public repository,PUBLISHED,new file,docs/ARCHITECTURE.md
 docs/DATA_PIPELINE.md,.md,5846,authored for the public repository,PUBLISHED,new file,docs/DATA_PIPELINE.md
 docs/LIMITATIONS.md,.md,6582,authored for the public repository,PUBLISHED,new file,docs/LIMITATIONS.md
