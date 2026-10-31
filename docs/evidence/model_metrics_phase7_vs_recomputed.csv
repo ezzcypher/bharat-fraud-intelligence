@@ -1,0 +1,18 @@
+metric,phase7_released,phase9_recomputed,abs_diff,status,split,model,threshold,source
+TP,1713,1713,0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+FP,1782,1782,0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+TN,87432,87432,0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+FN,1500,1500,0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+precision,0.4901287553648069,0.4901287553648069,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+recall,0.5331465919701214,0.5331465919701214,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+f1,0.5107334525939177,0.5107334525939177,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+specificity,0.9800255565270025,0.9800255565270025,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+fpr,0.01997444347299751,0.01997444347299751,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+fnr,0.4668534080298786,0.4668534080298786,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+balanced_accuracy,0.756586074248562,0.756586074248562,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+accuracy,0.9644908955175435,0.9644908955175435,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+alert_rate,0.037813625888539065,0.037813625888539065,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+prevalence,0.03476256937907754,0.03476256937907754,0.0,PASS,test,A_frozen,0.12379763346033115,Phase 7 outputs/metrics.json vs Phase 7 metrics_engine via Phase 8 bridge
+average_precision,0.5506197344626254,0.5506197344626254,0.0,PASS,test,A_frozen,n/a (ranking),same
+roc_auc,0.9051527755720846,0.9051527755720846,0.0,PASS,test,A_frozen,n/a (ranking),same
+illustrative_baseline_total_cost_CU,165900.0,165900.0,0.0,PASS,test,A_frozen,0.12379763346033115,"Phase 7 cost_scenarios.csv vs Phase 7 cost_engine via Phase 8 (ILLUSTRATIVE units, not money)"

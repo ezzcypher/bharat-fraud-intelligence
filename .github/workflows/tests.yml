@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Pipeline smoke run on SYNTHETIC example data
+        run: python -m src.pipeline.run --input examples/synthetic_transactions.csv --out /tmp/pipeline_demo
+      - name: Tests (no licensed data, no secrets, no retraining)
+        env:
+          BFI_PUBLIC_CI: "1"
+          BFI_ROOT: /tmp/bfi_no_licensed_artifacts
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python -m pytest -q -p no:cacheprovider -rfEs

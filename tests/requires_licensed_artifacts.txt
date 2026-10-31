@@ -1,0 +1,39 @@
+# Tests that need the licensed IEEE-CIS data / private frozen-model bundle (BFI_ROOT). Deselected only when BFI_PUBLIC_CI=1.
+# Generated from a clean-environment run; reasons in package_meta/CI_DESELECTED_TESTS.csv.
+tests/test_formulas.py::test_entry_complete_and_runs[prevalence]
+tests/test_formulas.py::test_entry_complete_and_runs[precision]
+tests/test_formulas.py::test_entry_complete_and_runs[recall]
+tests/test_formulas.py::test_entry_complete_and_runs[specificity]
+tests/test_formulas.py::test_entry_complete_and_runs[f1]
+tests/test_formulas.py::test_entry_complete_and_runs[accuracy]
+tests/test_formulas.py::test_entry_complete_and_runs[balanced_accuracy]
+tests/test_formulas.py::test_entry_complete_and_runs[fpr]
+tests/test_formulas.py::test_entry_complete_and_runs[fnr]
+tests/test_formulas.py::test_entry_complete_and_runs[wilson]
+tests/test_formulas.py::test_entry_complete_and_runs[total_cost]
+tests/test_formulas.py::test_existing_metrics_equal_phase7_on_project_counts
+tests/test_formulas.py::test_new_metrics_against_references
+tests/test_formulas.py::test_cost_and_bayes_match_phase7
+tests/test_formulas.py::test_bayes_equals_precision
+tests/test_ops.py::test_ingest_scores_with_frozen_model_reconciles_and_dedupes
+tests/test_ops.py::test_ingest_rejects_bad_schema_and_bad_rows
+tests/test_ops.py::test_case_from_alert_preserves_scoring_evidence
+tests/test_ops.py::test_case_from_stored_transaction
+tests/test_ops.py::test_checked_evaluation_complete_and_incomplete
+tests/test_ops.py::test_pages_render_without_exceptions[overview-common.evaluation = lambda *a, **k: {'status': 'error', 'error': 'simulated outage'}-light]
+tests/test_ops.py::test_pages_render_without_exceptions[overview-common.evaluation = lambda *a, **k: {'status': 'error', 'error': 'simulated outage'}-dark]
+tests/test_ops.py::test_pages_render_without_exceptions[performance-common.evaluation = lambda *a, **k: {'status': 'measured', 'metrics': {}, 'ranking': {}}-light]
+tests/test_ops.py::test_pages_render_without_exceptions[performance-common.evaluation = lambda *a, **k: {'status': 'measured', 'metrics': {}, 'ranking': {}}-dark]
+tests/test_phase9_core.py::test_02_phase9_api_signatures_and_calls
+tests/test_phase9_core.py::test_03_phase7_metrics_reproduce
+tests/test_phase9_core.py::test_04_phase7_cost_scenarios_reproduce
+tests/test_phase9_core.py::test_05_frozen_threshold_preserved
+tests/test_phase9_core.py::test_06_ids_and_joins
+tests/test_phase9_core.py::test_09_filters_update_counts_consistently
+tests/test_phase9_core.py::test_10_investigation_mode_never_exposes_labels
+tests/test_phase9_core.py::test_12_ai_answers_have_evidence_and_limitations
+tests/test_phase9_core.py::test_13_no_invented_fields
+tests/test_phase9_core.py::test_15_no_unnecessary_memory_duplication
+tests/test_phase9_core.py::test_22_works_without_llm_credentials
+tests/test_phase9_core.py::test_24_field_availability_registry_matches_real_columns
+tests/test_phase9_core.py::test_25_geography_filter_uses_real_codes_and_distinguishes_no_match

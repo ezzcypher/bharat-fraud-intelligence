@@ -1,0 +1,14 @@
+[client]
+toolbarMode = "minimal"      # hide the Deploy button; this is a private Colab app
+
+[server]
+headless = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false     # no telemetry
+
+[theme]
+base = "light"
+primaryColor = "#0f7b5f"
+font = "sans serif"

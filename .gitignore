@@ -1,0 +1,66 @@
+# --- Secrets and local configuration: never commit ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.git-credentials
+.netrc
+kaggle.json
+*credentials*.json
+*service-account*.json
+*service_account*.json
+
+# --- Runtime state: complaints, cases, evidence uploads, audit logs, diagnostics, caches ---
+outputs/runtime/
+outputs/cache/
+outputs/intelligence/
+outputs/pipeline*/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.jsonl
+
+# --- Licensed data, derived data and model artifacts: never commit (see docs/DATA_PIPELINE.md) ---
+data/
+ieee_data/
+train_transaction.csv
+train_identity.csv
+test_transaction.csv
+test_identity.csv
+sample_submission.csv
+*.zip
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.npz
+*.npy
+*.h5
+
+# --- Python / tooling ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

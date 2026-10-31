@@ -1,0 +1,10 @@
+[project]
+name = "bharat-fraud-intelligence"
+version = "2.0.0"
+description = "Explainable fraud-risk analytics dashboard (Streamlit) over a frozen LightGBM model, with a reproducible data pipeline."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

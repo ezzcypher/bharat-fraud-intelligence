@@ -1,0 +1,6 @@
+file,line,severity,rule,masked_match,resolution
+README.md,183,LOW,absolute path,/co***t/,ACCEPTED: generic Google Colab working directory in run instructions; not a private path
+README.md,186,LOW,absolute path,/co***t/,ACCEPTED: generic Google Colab working directory in run instructions; not a private path
+notebooks/BFI_v2_Phase9_Formula_Explorer.ipynb,36,LOW,absolute path,/co***t/,ACCEPTED: generic Google Colab working directory in run instructions; not a private path
+tests/test_ops.py,33,HIGH,card-like number (Luhn),411***11,"RESOLVED: public Visa test number (not a real card), used to test that full card numbers are refused"
+tests/test_ops.py,35,HIGH,card-like number (Luhn),411***11,"RESOLVED: public Visa test number (not a real card), used to test that full card numbers are refused"
